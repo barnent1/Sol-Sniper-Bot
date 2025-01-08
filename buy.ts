@@ -129,6 +129,7 @@ async function init(): Promise<void> {
         'USDC',
       );
       quoteAmount = new TokenAmount(quoteToken, QUOTE_AMOUNT, false);
+      quoteMinPoolSizeAmount = new TokenAmount(quoteToken, MIN_POOL_SIZE, false);
       break;
     }
     default: {
